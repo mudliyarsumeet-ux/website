@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SR Fitness | Beginner Home Workout Guide</title>
+<meta name="description" content="A beginner-friendly home workout guide with exercises, reps, sets, rest times and a simple weekly plan.">
+<style>
+:root{--orange:#ff7a00;--orange2:#ff9b3d;--ink:#101316;--card:#171b20;--muted:#aeb6bf;--line:#2a3037;--white:#f7f8fa}
+*{box-sizing:border-box;scroll-behavior:smooth}
+body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;background:#0c0f12;color:var(--white);line-height:1.6}
+a{color:inherit;text-decoration:none}
+.container{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;z-index:20;background:rgba(12,15,18,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{height:74px;display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:12px;font-weight:900;letter-spacing:.5px}
+.brand img{width:52px;height:52px;object-fit:cover;border-radius:12px}
+.brand span{font-size:1.1rem}
+nav{display:flex;gap:22px;font-size:.92rem;color:#d8dde2}
+nav a:hover{color:var(--orange2)}
+.hero{padding:72px 0 56px;background:radial-gradient(circle at 75% 20%,rgba(255,122,0,.18),transparent 35%),linear-gradient(135deg,#101419,#0b0d10)}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:42px;align-items:center}
+.kicker{color:var(--orange2);font-weight:800;text-transform:uppercase;letter-spacing:2px;font-size:.82rem}
+h1{font-size:clamp(2.5rem,6vw,5rem);line-height:1.02;margin:12px 0 18px}
+h1 span{color:var(--orange)}
+.hero p{font-size:1.08rem;color:#c5ccd3;max-width:650px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+.btn{padding:13px 19px;border-radius:12px;font-weight:800;border:1px solid var(--line);background:#171c22}
+.btn.primary{background:var(--orange);border-color:var(--orange);color:#111}
+.btn:hover{transform:translateY(-1px)}
+.hero-logo{background:#15191e;border:1px solid #30363d;border-radius:24px;padding:18px;box-shadow:0 24px 60px rgba(0,0,0,.35)}
+.hero-logo img{display:block;width:100%;border-radius:16px;aspect-ratio:1/1;object-fit:cover}
+section{padding:68px 0}
+.section-head{margin-bottom:28px}
+.section-head h2{font-size:2rem;margin:0 0 8px}
+.section-head p{margin:0;color:var(--muted)}
+.notice{border:1px solid #70420e;background:#24180c;color:#ffd7ae;padding:16px 18px;border-radius:14px;margin-bottom:28px}
+.plan-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px}
+.card h3{margin-top:0}
+.day{color:var(--orange2);font-weight:900;font-size:.8rem;text-transform:uppercase;letter-spacing:1.2px}
+.badges{display:flex;gap:8px;flex-wrap:wrap;margin-top:15px}
+.badge{background:#222830;border:1px solid #323941;border-radius:999px;padding:5px 10px;font-size:.78rem;color:#d9dee3}
+.table-wrap{overflow:auto;border:1px solid var(--line);border-radius:18px}
+table{width:100%;border-collapse:collapse;min-width:760px;background:#13171b}
+th,td{padding:15px 16px;text-align:left;border-bottom:1px solid var(--line)}
+th{background:#1c2228;color:#fff}
+td{color:#d6dbe0}
+tr:last-child td{border-bottom:0}
+.ex-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.ex-card{background:linear-gradient(180deg,#191e24,#13171b);border:1px solid var(--line);border-radius:18px;padding:20px}
+.ex-card .icon{font-size:1.8rem}
+.ex-card h3{margin:8px 0 5px}
+.ex-card p{color:#aeb6bf;margin:0 0 12px}
+.ex-card ul{padding-left:18px;margin:0;color:#d7dce1}
+.timer{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:center}
+.timer-box{background:#11161b;border:1px solid var(--line);border-radius:20px;padding:28px;text-align:center}
+.time{font-size:4rem;font-weight:900;letter-spacing:2px;color:var(--orange)}
+.timer-buttons{display:flex;justify-content:center;gap:10px;flex-wrap:wrap}
+.small{font-size:.9rem;color:var(--muted)}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.contact-card{background:#161b20;border:1px solid var(--line);border-radius:18px;padding:24px}
+.contact-card strong{color:#fff}
+footer{padding:30px 0;border-top:1px solid var(--line);color:#89929c}
+@media(max-width:850px){.hero-grid,.timer,.contact{grid-template-columns:1fr}.plan-grid,.ex-grid{grid-template-columns:1fr 1fr}nav{display:none}}
+@media(max-width:560px){.plan-grid,.ex-grid{grid-template-columns:1fr}.hero{padding-top:46px}section{padding:52px 0}.time{font-size:3rem}}
+</style>
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a class="brand" href="#top"><img src="assets/sr-fitness-logo.png" alt="SR Fitness logo"><span>SR FITNESS</span></a>
+    <nav>
+      <a href="#plan">Plan</a><a href="#exercises">Exercises</a><a href="#timer">Rest Timer</a><a href="#contact">Gym Details</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <div class="kicker">Strength & Results</div>
+      <h1>Start your <span>home workout</span> the right way.</h1>
+      <p>A simple beginner guide showing what to do, how many reps and sets to perform, and how long to rest—without needing a gym full of equipment.</p>
+      <div class="actions"><a class="btn primary" href="#plan">View beginner plan</a><a class="btn" href="#exercises">Learn exercises</a></div>
+    </div>
+    <div class="hero-logo"><img src="assets/sr-fitness-logo.png" alt="SR Fitness Strength & Results"></div>
+  </div>
+</section>
+
+<section id="plan">
+<div class="container">
+  <div class="section-head"><h2>3-day beginner home plan</h2><p>Start with controlled movements and focus on good technique rather than speed.</p></div>
+  <div class="notice"><strong>Before you start:</strong> Warm up for about 5 minutes. Keep a clear, stable workout area. Stop if an exercise causes sharp or unusual pain; if you have an injury or health condition, get appropriate professional advice before exercising.</div>
+  <div class="plan-grid">
+    <article class="card"><div class="day">Day 1 · Full body</div><h3>Foundation</h3><p>Build familiarity with basic movements.</p><div class="badges"><span class="badge">25–35 min</span><span class="badge">60–90 sec rest</span></div></article>
+    <article class="card"><div class="day">Day 2 · Rest / easy walk</div><h3>Recovery</h3><p>Give your muscles time to recover. Gentle movement is optional.</p><div class="badges"><span class="badge">Recovery</span><span class="badge">Hydrate</span></div></article>
+    <article class="card"><div class="day">Day 3 · Full body</div><h3>Repeat & improve</h3><p>Repeat the movements and aim for smoother, controlled reps.</p><div class="badges"><span class="badge">25–35 min</span><span class="badge">60–90 sec rest</span></div></article>
+  </div>
+
+  <div style="height:22px"></div>
+  <div class="table-wrap">
+  <table>
+    <thead><tr><th>Exercise</th><th>Sets</th><th>Reps / time</th><th>Rest</th><th>Main focus</th></tr></thead>
+    <tbody>
+      <tr><td>Chair squat / sit-to-stand</td><td>2</td><td>8–12</td><td>60–90 sec</td><td>Legs & glutes</td></tr>
+      <tr><td>Wall or incline push-up</td><td>2</td><td>6–12</td><td>60–90 sec</td><td>Chest, shoulders & arms</td></tr>
+      <tr><td>Glute bridge</td><td>2</td><td>10–15</td><td>60 sec</td><td>Glutes & hips</td></tr>
+      <tr><td>Supported reverse lunge</td><td>2</td><td>6–10 each side</td><td>60–90 sec</td><td>Legs & balance</td></tr>
+      <tr><td>Bird dog / dead bug</td><td>2</td><td>6–10 each side</td><td>45–60 sec</td><td>Core control</td></tr>
+      <tr><td>Plank</td><td>2</td><td>15–30 sec</td><td>45–60 sec</td><td>Core</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p class="small" style="margin-top:12px">Tip: If the target range feels too difficult, use an easier variation or do fewer controlled repetitions. As the routine becomes comfortable, gradually increase reps within the range before making an exercise harder.</p>
+</div>
+</section>
+
+<section id="exercises" style="background:#0f1317">
+<div class="container">
+  <div class="section-head"><h2>Exercise guide</h2><p>Beginner-friendly movements you can practise at home.</p></div>
+  <div class="ex-grid">
+    <article class="ex-card"><div class="icon">🪑</div><h3>Chair squat</h3><p>Sit back toward a stable chair and stand tall again.</p><ul><li>Keep feet stable</li><li>Move slowly</li><li>Use the chair for confidence</li></ul></article>
+    <article class="ex-card"><div class="icon">🤲</div><h3>Wall push-up</h3><p>Hands on a wall, body straight, bend and press back.</p><ul><li>Keep your body aligned</li><li>Control both directions</li><li>Step farther back to progress</li></ul></article>
+    <article class="ex-card"><div class="icon">🌉</div><h3>Glute bridge</h3><p>Lie on your back with knees bent and gently lift your hips.</p><ul><li>Keep feet planted</li><li>Pause briefly at the top</li><li>Avoid over-arching your back</li></ul></article>
+    <article class="ex-card"><div class="icon">🦵</div><h3>Supported reverse lunge</h3><p>Hold a stable support and step one foot back before returning.</p><ul><li>Use support for balance</li><li>Keep the front foot stable</li><li>Move only as far as comfortable</li></ul></article>
+    <article class="ex-card"><div class="icon">🐦</div><h3>Bird dog</h3><p>From hands and knees, extend opposite arm and leg with control.</p><ul><li>Keep your trunk steady</li><li>Move slowly</li><li>Alternate sides</li></ul></article>
+    <article class="ex-card"><div class="icon">⏱️</div><h3>Plank</h3><p>Hold a comfortable plank position while keeping your body controlled.</p><ul><li>Start with a short hold</li><li>Keep breathing</li><li>Use an easier version if needed</li></ul></article>
+  </div>
+</div>
+</section>
+
+<section id="timer">
+<div class="container">
+  <div class="section-head"><h2>Rest timer</h2><p>Use this between sets so you don't have to keep checking the clock.</p></div>
+  <div class="timer">
+    <div>
+      <h3>How to use it</h3>
+      <p>For most beginner strength exercises, start around 60–90 seconds between sets. Take a little longer if your breathing has not settled or you cannot perform the next set with control.</p>
+      <p class="small">This timer is a simple training aid, not a medical device.</p>
+    </div>
+    <div class="timer-box">
+      <div id="time" class="time">01:00</div>
+      <div class="timer-buttons">
+        <button class="btn" onclick="setTime(60)">60 sec</button>
+        <button class="btn" onclick="setTime(90)">90 sec</button>
+        <button class="btn primary" onclick="toggleTimer()" id="startBtn">Start</button>
+        <button class="btn" onclick="resetTimer()">Reset</button>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section id="contact" style="background:#0f1317">
+<div class="container">
+  <div class="section-head"><h2>SR Fitness details</h2><p>Details supplied in the reference image.</p></div>
+  <div class="contact">
+    <div class="contact-card">
+      <h3>📍 Location</h3>
+      <p>SR Fitness, Plot No. 12, behind Essal Studio, next to Khatri Chuna Factory, Upper Trombay, Trombay, Mumbai, Maharashtra 400088.</p>
+      <a class="btn primary" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=SR%20Fitness%20Plot%20No%2012%20Upper%20Trombay%20Mumbai%20400088">Open in Maps</a>
+    </div>
+    <div class="contact-card">
+      <h3>☎️ Contact & services</h3>
+      <p><strong>Phone:</strong> 075069 99119</p>
+      <p><strong>Listed services:</strong> CrossFit, Cycling, Kickboxing, Nutrition consulting, Personal training, Private lessons and sauna facilities.</p>
+      <p class="small">Reference image shows a 5.0 rating from 15 reviews.</p>
+    </div>
+  </div>
+</div>
+</section>
+</main>
+
+<footer>
+  <div class="container">© 2026 SR Fitness · Beginner Home Workout Guide · Strength & Results</div>
+</footer>
+
+<script>
+let seconds=60, timer=null;
+const timeEl=document.getElementById('time'), startBtn=document.getElementById('startBtn');
+function render(){const m=String(Math.floor(seconds/60)).padStart(2,'0');const s=String(seconds%60).padStart(2,'0');timeEl.textContent=`${m}:${s}`;}
+function setTime(v){clearInterval(timer);timer=null;seconds=v;startBtn.textContent='Start';render();}
+function toggleTimer(){
+ if(timer){clearInterval(timer);timer=null;startBtn.textContent='Start';return;}
+ startBtn.textContent='Pause';
+ timer=setInterval(()=>{if(seconds>0){seconds--;render()}else{clearInterval(timer);timer=null;startBtn.textContent='Start';try{navigator.vibrate?.(200)}catch(e){} }},1000);
+}
+function resetTimer(){setTime(60)}
+render();
+</script>
+</body>
+</html>
